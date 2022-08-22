@@ -96,7 +96,9 @@ def mars_facts():
     df.set_index('Description', inplace=True)
 
     # Convert dataframe into HTML format, add bootstrap
-    return df.to_html(classes="table table-striped")
+    #return df.to_html(classes=["table-bordered", "table-striped", "table-hover"])
+
+    return df.to_html(classes="table-striped")
 
 def get_mars_hemispheres(browser):
     url = 'https://marshemispheres.com/'
